@@ -125,7 +125,7 @@ internal class Program
         }
         else
         {
-            propGroup.Value = "embedded";
+            debugTypeElement.Value = "embedded";
         }
 
         var langVersionElement = propGroup.Element("LangVersion");
@@ -135,7 +135,7 @@ internal class Program
         }
         else
         {
-            propGroup.Value = "Latest";
+            langVersionElement.Value = "Latest";
         }
 
         var settings = new XmlWriterSettings

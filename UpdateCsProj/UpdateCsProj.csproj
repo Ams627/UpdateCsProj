@@ -1,10 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net472</TargetFramework>
-    <LangVersion>Latest</LangVersion>
+    <TargetFramework>net48</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <BinDir>u:\</BinDir>
+    <DebugType>embedded</DebugType>
+    <LangVersion>Latest</LangVersion>
   </PropertyGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="echo copying $(TargetPath) to $(BinDir) &amp;&amp; copy $(TargetPath) $(BinDir)" />
